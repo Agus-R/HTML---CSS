@@ -18,6 +18,7 @@
 
 body{
     font-family: "Big Shoulders Display", sans-serif;
+    /* font-family: "Lexend deca", sans-serif; */
 }
 
 section{
@@ -64,6 +65,33 @@ section{
 
 #luxury button{
     color: hsl(179, 100%, 13%);
+} 
+
+/* #sedans #suvs y #luxury comparten casi los mismos valores, podria resumirse en una sola clase */
+
+.card{
+    color: white;
+    padding: 30px;
+    height: 450px;
+}
+.sedans{
+    background: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+/* En caso de querer darle estilo a los botones podria ser de esta forma */
+/* .sedans .button {
+    color: hsl(179, 100%, 13%);
+}
+.sedans .button:hover{
+    background-color: hsl(31, 77%, 52%);
+    color: white;
+} */
+.suvs{
+    background: hsl(184, 100%, 22%);
+}
+.luxury{
+    background: hsl(179, 100%, 13%); 
+    border-radius: 0 10px 10px 0;
 }
 
 .foot{
@@ -89,13 +117,26 @@ h1{
 p{
     margin-bottom: 100px;
     font-size: 13px;
-    text-align: center;
+    text-align: center; /* Borrar */
     line-height: 1.8;
 }
 
+/* Cambiar por una clase ej .button */
 button{
     background: white;
     border-radius: 5px 5px 5px 5px;
     padding: 10px 15px;
     border: 1mm solid white;
+    /* font-family: "Lexend deca", sans-serif; */
+}
+.button{
+    background: white;
+    border-radius: 20px;
+    padding: 10px 15px;
+    border: 1mm solid white;
+    font-family: "Lexend deca", sans-serif;
+}
+.button:hover{
+    transition: 300ms;
+    cursor: pointer;
 }
